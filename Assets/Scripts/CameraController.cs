@@ -36,19 +36,21 @@ public class CameraController : MonoBehaviour
             }
         }
       
-        // When clicking get the point on the plane that was clicked and move the sphere to that point
-        if (Input.GetMouseButtonDown(0))
-        {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-            if (Physics.Raycast(ray, out hit))
-            {
-                if (hit.transform == planeTransform)
-                {
-                    sphereTransform.position = hit.point;
-                }
-            }
-        }
+        // // When clicking get the point on the plane that was clicked and move the sphere to that point
+        // if (Input.GetMouseButtonDown(0))
+        // {
+        //     Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        //     RaycastHit hit;
+        //     if (Physics.Raycast(ray, out hit))
+        //     {
+        //         if (hit.transform == planeTransform)
+        //         {
+        //             sphereTransform.position = hit.point;
+        //         }
+        //     }
+        // }
+        
+        
     }
 
     // Update is called once per frame

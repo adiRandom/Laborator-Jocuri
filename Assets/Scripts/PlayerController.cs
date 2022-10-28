@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
     private TextMeshProUGUI _gameOverText;
     private bool _gameOver = false;
 
-    private const int MAX_PICKUPS = 10;
+    private const int MAX_PICKUPS = 5;
 
     // Start is called before the first frame update
     void Start()
